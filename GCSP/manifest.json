@@ -1,0 +1,23 @@
+{
+  "name": "GCSP",
+  "default_locale": "en",
+  "description": "",
+  "version": "1.0.0",
+  "author": "Vic Peeters",
+  "homepage_url": "https://github.com/NietVic/magister69/",
+  "manifest_version": 2,
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "browsingData",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "GCSP"
+    }
+}
