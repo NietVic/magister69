@@ -22,9 +22,11 @@
    head.appendChild(style);
    GM_addStyle(GM_getResourceText("style"));
 }
-var erika = document.createElement("div");
-erika.innerHTML = "<audio autoplay loop> <source src='https://github.com/NietVic/magister69/raw/main/erika.mp3' type='audio/mpeg'></audio>";
-document.body.appendChild(erika);
+    var erika = document.createElement("div");
+    erika.innerHTML = "<audio autoplay='' loop=''> <source src='https://github.com/NietVic/magister69/raw/main/erika.mp3' type='audio/mpeg'></audio>";
+    document.body.appendChild(erika);
+
+
 
 var bg1 = 'https://raw.githubusercontent.com/NietVic/magister69/main/bg1.jpg';
 var bg2 = 'https://raw.githubusercontent.com/NietVic/magister69/main/bg2.jpg';
@@ -33,7 +35,6 @@ var bg4 = 'https://raw.githubusercontent.com/NietVic/magister69/main/bg4.jpg';
 var bg5 = 'https://raw.githubusercontent.com/NietVic/magister69/main/bg5.jpg';
 var bg6 = 'https://raw.githubusercontent.com/NietVic/magister69/main/bg6.jpg';
 var bg7 = 'https://raw.githubusercontent.com/NietVic/magister69/main/bg7.jpg';
-
 
     var AKleur = '#382c1e';
     var SKleur = '#1f97f9';
@@ -49,6 +50,7 @@ var bg7 = 'https://raw.githubusercontent.com/NietVic/magister69/main/bg7.jpg';
     addGlobalStyle('.k-grouping-row td, td.k-group-cell, .k-resize-handle-inner{background-color:'+GRKleur+'}')
 
 
+
 /*var P = false;
     if (!P){
        alert('h')
@@ -59,4 +61,3 @@ var bg7 = 'https://raw.githubusercontent.com/NietVic/magister69/main/bg7.jpg';
 
 
 })();
-
