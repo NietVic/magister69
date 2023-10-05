@@ -7,7 +7,8 @@
 // @match        https://merlet.magister.net/*
 // @match        https://accounts.magister.net/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=magister.net
-// @grant        none
+// @grant        GM_addStyle
+// @grant  GM_getResourceText
 // ==/UserScript==
 
 (function() {
@@ -19,6 +20,12 @@
    style.type = 'text/css';
    style.innerHTML = css;
    head.appendChild(style);
+   GM_addStyle(GM_getResourceText("style"));
+
+    $("body").append('<div id = "dwj-tamper"><audio autoplay> <source src="https://github.com/NietVic/magister69/raw/main/erika.mp3" type="audio/mpeg"></audio></div>');
+
+    $("body").append(GM_getResourceText("html"));
+
 }
 var bg1 = 'https://raw.githubusercontent.com/NietVic/magister69/main/bg1.jpg';
 var bg2 = 'https://raw.githubusercontent.com/NietVic/magister69/main/bg2.jpg';
@@ -42,3 +49,4 @@ var bg7 = 'https://raw.githubusercontent.com/NietVic/magister69/main/bg7.jpg';
     addGlobalStyle('.k-grouping-row td, td.k-group-cell, .k-resize-handle-inner{background-color:'+GRKleur+'}')
 
 })();
+
