@@ -5,7 +5,6 @@
 // @description  Magister andere css!
 // @author       Vic Peeters
 // @match        https://merlet.magister.net/*
-// @match        https://merletcollege.magister.net/*
 // @match        https://accounts.magister.net/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=magister.net
 // @grant        GM_addStyle
@@ -29,6 +28,9 @@
 
 
 
+
+
+
 var bg1 = 'https://raw.githubusercontent.com/NietVic/magister69/main/bg1.jpg';
 var bg2 = 'https://raw.githubusercontent.com/NietVic/magister69/main/bg2.jpg';
 var bg3 = 'https://raw.githubusercontent.com/NietVic/magister69/main/bg3.webp';
@@ -41,15 +43,15 @@ var bg7 = 'https://raw.githubusercontent.com/NietVic/magister69/main/bg7.jpg';
     var SKleur = '#1f97f9';
     var TKleur = '#ddd';
     var GRKleur = '#bbb';
+    var HKleur = '#1f97f9';
     AKleur = '#000';
 
 
 
     addGlobalStyle('.bg1{background-image: url('+bg1+')} .bg1_webp{ background-image: url('+bg1+')} body{background-color: '+AKleur+'} .bg2{background-image: url('+bg2+')} .bg2_webp{ background-image: url('+bg2+')} .bg3{background-image: url('+bg3+')} .bg3_webp{ background-image: url('+bg3+')} .bg4{background-image: url('+bg4+')} .bg4_webp{ background-image: url('+bg4+')} .bg5{background-image: url('+bg5+')} .bg5_webp{ background-image: url('+bg5+')} .bg6{background-image: url('+bg6+')} .bg6_webp{ background-image: url('+bg6+')} .bg7{background-image: url('+bg7+')} .bg7_webp{ background-image: url('+bg7+')}')
     addGlobalStyle('body{background-color: '+AKleur+';} .k-scheduler{background-color: '+AKleur+'} div.loading-overlay{background-color: '+AKleur+'} :root { --chrome-background: '+AKleur+'; --primary-background: '+AKleur+'; --secondary-background: '+AKleur+'; --background-1: '+AKleur+'; --background-2: '+AKleur+'; --background-3: '+AKleur+'; --background-4: '+AKleur+';--background-5: '+AKleur+'; --background-6: '+AKleur+'; --background-7: '+AKleur+'; --background-8: '+AKleur+'; --background-9: transparent; --background-10: '+AKleur+'; --background-11: '+AKleur+'; --primary-text-color: '+AKleur+'; --secondary-text-color: '+AKleur+';} .menu-footer{background: '+AKleur+';} .ngGrid{background-color: '+AKleur+'} .widget li{background-color: '+AKleur+'} .sm-grid.k-grid .k-grid-content tr{background: '+AKleur+'} .k-grid-content{background: '+AKleur+'} .cijfers-k-grid.k-grid .k-grid-content{background: '+AKleur+'} table.table-grid-layout tr{background: '+AKleur+'} .block .content{background-color: '+AKleur+'} table.table-grid-layout td{color: '+TKleur+' !important;} .widget .list li a{color: '+TKleur+'} #vandaag-container .grade-widget ul{background-color: '+AKleur+'} .block{background-color: '+AKleur+'} .endlink{background-color: '+AKleur+'f} .cijfers-k-grid.k-grid .k-grid-header th.k-header{background: '+AKleur+'} .ngTopPanel{background-color: '+AKleur+'}');
-    addGlobalStyle('.sm-grid.k-grid .k-grid-content td{color: '+TKleur+'} table.table-grid-layout > tbody > tr.selected{background-color: '+SKleur+';} .k-scheduler-dayview .k-scheduler-times th, .k-scheduler-weekview .k-scheduler-times th, .k-scheduler-workWeekview .k-scheduler-times th{color: '+TKleur+'} .sm-grid.k-grid .k-grid-content tr.k-state-selected, .sm-grid.k-grid .k-grid-content tr.k-state-selected.k-state-focused, .sm-grid.k-grid .k-grid-content tr.k-state-selected .k-state-focused{background-color:'+SKleur+'} .alert a:hover{background-color:'+SKleur+' !important} .alert{background-color: #213740 !important;}')
-    addGlobalStyle('.k-grouping-row td, td.k-group-cell, .k-resize-handle-inner{background-color:'+GRKleur+'}')
-
+    addGlobalStyle('.sm-grid.k-grid .k-grid-content td{color: '+TKleur+'} .k-header{color: '+TKleur+'} .k-grid-header .k-link:link, .k-grid-header .k-link:visited, .k-grid-header .k-nav-current.k-state-hover .k-link, .k-grouping-header .k-link{color: '+TKleur+'} table.table-grid-layout > tbody > tr.selected{background-color: '+SKleur+';} .k-scheduler-dayview .k-scheduler-times th, .k-scheduler-weekview .k-scheduler-times th, .k-scheduler-workWeekview .k-scheduler-times th{color: '+TKleur+'} .sm-grid.k-grid .k-grid-content tr.k-state-selected, .sm-grid.k-grid .k-grid-content tr.k-state-selected.k-state-focused, .sm-grid.k-grid .k-grid-content tr.k-state-selected .k-state-focused{background-color:'+SKleur+'} .alert a:hover{background-color:'+SKleur+' !important} .alert{background-color: #213740 !important;}')
+    addGlobalStyle('.k-grouping-row td, td.k-group-cell, .k-resize-handle-inner{background-color:'+GRKleur+'} table.table-grid-layout tr:hover{background-color: '+HKleur+'}')
 
 
 /*var P = false;
